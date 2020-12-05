@@ -1,0 +1,6 @@
+# command to start grid hub.
+java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig selenium-config/hubconfig.json 
+
+
+#command to start grid node
+java -Dwebdriver.gecko.driver="geckodriver" -Dwebdriver.chrome.driver="chromedriver" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig selenium-config/nodeconfig.json
